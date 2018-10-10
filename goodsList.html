@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/goodsList.css">
+<title>签名</title>
+</head>
+<body>
+<!-- head -->
+    <div class="head">
+        <a class="back_btn"><span></span></a>
+        <span class="title">签名</span>
+        <a class="btn_list"><span></span></a>
+        <div>
+            <a href="index.html">主页</a>
+            <a href="assort.html">分类</a>
+            <a href="find.html">发现</a>
+            <a href="goodsCart.html">购物车</a>
+            <a href="my.html">我的</a>
+            <span></span>
+        </div>
+    </div>   
+<!-- content -->
+    <div class="content">
+        <div class="content_1">
+            <span class="content_1_left">相关商品</span>
+            <span class="content_1_right"><span>最新发布</span><i></i></span>
+            </span>
+        </div>
+        <div class="content_2">
+            <img class="content_2_left" src="img/-M-0d561d4374291ebce0b31873a1d9cc30_356x356.jpg"/>
+            <div class="content_2_right">
+                <p class="good_msg">【独家发售】阿兰出道十周年纪念专辑《十念》限量签名版</p>
+                <p class="price_box">
+                    <span class="price_now">￥<span>188</span></span>
+                    <span class="price_old">￥<span>188</span></span>
+                </p>
+            </div>
+        </div>
+        <div class="content_2">
+            <img class="content_2_left" src="img/-M-0d561d4374291ebce0b31873a1d9cc30_356x356.jpg"/>
+            <div class="content_2_right">
+                <p class="good_msg">【独家发售】阿兰出道十周年纪念专辑《十念》限量签名版</p>
+                <p class="price_box">
+                    <span class="price_now">￥<span>188</span></span>
+                    <span class="price_old">￥<span>188</span></span>
+                </p>
+            </div>
+        </div>
+        <div class="content_2">
+            <img class="content_2_left" src="img/-M-0d561d4374291ebce0b31873a1d9cc30_356x356.jpg"/>
+            <div class="content_2_right">
+                <p class="good_msg">【独家发售】阿兰出道十周年纪念专辑《十念》限量签名版</p>
+                <p class="price_box">
+                    <span class="price_now">￥<span>188</span></span>
+                    <span class="price_old">￥<span>188</span></span>
+                </p>
+            </div>
+        </div>
+        <div class="content_2">
+            <img class="content_2_left" src="img/-M-0d561d4374291ebce0b31873a1d9cc30_356x356.jpg"/>
+            <div class="content_2_right">
+                <p class="good_msg">【独家发售】阿兰出道十周年纪念专辑《十念》限量签名版</p>
+                <p class="price_box">
+                    <span class="price_now">￥<span>188</span></span>
+                    <span class="price_old">￥<span>188</span></span>
+                </p>
+            </div>
+        </div>
+        <div class="content_2">
+            <img class="content_2_left" src="img/-M-0d561d4374291ebce0b31873a1d9cc30_356x356.jpg"/>
+            <div class="content_2_right">
+                <p class="good_msg">【独家发售】阿兰出道十周年纪念专辑《十念》限量签名版</p>
+                <p class="price_box">
+                    <span class="price_now">￥<span>188</span></span>
+                    <span class="price_old">￥<span>188</span></span>
+                </p>
+            </div>
+        </div>
+<!-- alert -->
+        <div class="alert_box">
+            <div class="maskLayer"></div>
+            <div class="filtrate_box">
+                <p class="sort_p">排序<span></span></p>
+                <p class="sort_type">
+                    <span class="sort_type_1"></span>
+                    <span class="sort_type_word">最新发布</span>
+                    <i></i>
+                </p>
+                <p class="sort_type">
+                    <span class="sort_type_2"></span>
+                    <span class="sort_type_word">价格从低到高</span>
+                    <i></i>
+                </p>
+                <p class="sort_type">
+                    <span class="sort_type_3"></span>
+                    <span class="sort_type_word">价格从高到低</span>
+                    <i></i>
+                </p>
+                <p class="sort_type">
+                    <span class="sort_type_4"></span>
+                    <span class="sort_type_word">销量</span>
+                    <i></i>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    $(".content_1_right").click(function(){
+        $(".alert_box").show();
+    })
+
+    $($(".sort_p").children("span")).click(function(){
+        $(".alert_box").hide();
+    })
+
+    $(".maskLayer").click(function(){
+        $(".alert_box").hide();
+    })
+
+    $(".sort_type").click(function(){
+        $($($(".sort_type")).children("i")).removeClass("sort_type_i");
+        $($(this).children("i")).addClass("sort_type_i");
+        let html=$($(this).children(".sort_type_word")).html();
+        $($(".content_1_right").children("span")).html(html);
+        $(".alert_box").hide();
+    })
+
+    $(".back_btn").click(function(){
+        window.history.back();
+    })
+    $("body").click(function(){
+        if($($(".btn_list").next()).show()){
+            $($(".btn_list").next()).hide();
+        }
+    })
+    $(".btn_list").toggle(
+        function(){
+            $($(this).next()).show();
+    },
+        function(){
+            $($(this).next()).hide();
+    })
+})
+</script>

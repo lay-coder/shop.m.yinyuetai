@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/goodsCart.css">
+<title>购物车</title>
+</head>
+<body>
+ <!-- head -->
+    <div class="head">
+        <span class="title_left">编辑</span>
+        <span class="title">购物车</span>
+        <a class="btn_list">...</a>
+        <div class="btn_box">
+            <a href="index.html">主页</a>
+            <a href="assort.html">分类</a>
+            <a href="find.html">发现</a>
+            <a href="my.html">我的</a>
+            <span></span>
+        </div>
+    </div>  
+<!-- content -->
+    <div class="content">
+        <a class="content_box">
+            <span class="check checked"></span>
+            <img class="good_pic" src="img/-M-719ee4c0d5fad950b518f6765c3f4062_200x200.jpg" />
+            <div class="good_mes">
+                <p class="good_mes_word">【包邮-特惠】王青&冯建宇-无限斗界之暗夜双龙-电影线上限量周边</p>
+                <p class="good_mes_money">
+                    <span class="good_type">型号:纸胶带</span>
+                    <span class="good_num">x<span>2</span></span>
+                    <span class="good_price">￥<span class="good_price_">14.9</span></span>
+                </p>
+            </div>
+        </a>
+        <a class="content_box">
+            <span class="check checked"></span>
+            <img class="good_pic" src="img/-M-719ee4c0d5fad950b518f6765c3f4062_200x200.jpg" />
+            <div class="good_mes">
+                <p class="good_mes_word">【包邮-特惠】王青&冯建宇-无限斗界之暗夜双龙-电影线上限量周边</p>
+                <p class="good_mes_money">
+                    <span class="good_type">型号:纸胶带</span>
+                    <span class="good_num">x<span>2</span></span>
+                    <span class="good_price">￥<span class="good_price_">84.9</span></span>
+                </p>
+            </div>
+        </a>
+        <a class="content_box">
+            <span class="check checked"></span>
+            <img class="good_pic" src="img/-M-719ee4c0d5fad950b518f6765c3f4062_200x200.jpg" />
+            <div class="good_mes">
+                <p class="good_mes_word">【包邮-特惠】王青&冯建宇-无限斗界之暗夜双龙-电影线上限量周边</p>
+                <p class="good_mes_money">
+                    <span class="good_type">型号:纸胶带</span>
+                    <span class="good_num">x<span>2</span></span>
+                    <span class="good_price">￥<span class="good_price_">34.9</span></span>
+                </p>
+            </div>
+        </a>
+        <a class="content_box">
+            <span class="check checked"></span>
+            <img class="good_pic" src="img/-M-719ee4c0d5fad950b518f6765c3f4062_200x200.jpg" />
+            <div class="good_mes">
+                <p class="good_mes_word">【包邮-特惠】王青&冯建宇-无限斗界之暗夜双龙-电影线上限量周边</p>
+                <p class="good_mes_money">
+                    <span class="good_type">型号:纸胶带</span>
+                    <span class="good_num">x<span>2</span></span>
+                    <span class="good_price">￥<span class="good_price_">54.9</span></span>
+                </p>
+            </div>
+        </a>
+        <a class="content_box">
+            <span class="check checked"></span>
+            <img class="good_pic" src="img/-M-719ee4c0d5fad950b518f6765c3f4062_200x200.jpg" />
+            <div class="good_mes">
+                <p class="good_mes_word">【包邮-特惠】王青&冯建宇-无限斗界之暗夜双龙-电影线上限量周边</p>
+                <p class="good_mes_money">
+                    <span class="good_type">型号:纸胶带</span>
+                    <span class="good_num">x<span>2</span></span>
+                    <span class="good_price">￥<span class="good_price_">14.9</span></span>
+                </p>
+            </div>
+        </a>
+        <a class="content_box">
+            <span class="check checked"></span>
+            <img class="good_pic" src="img/-M-719ee4c0d5fad950b518f6765c3f4062_200x200.jpg" />
+            <div class="good_mes">
+                <p class="good_mes_word">【包邮-特惠】王青&冯建宇-无限斗界之暗夜双龙-电影线上限量周边</p>
+                <p class="good_mes_money">
+                    <span class="good_type">型号:纸胶带</span>
+                    <span class="good_num">x<span>2</span></span>
+                    <span class="good_price">￥<span class="good_price_">4.9</span></span>
+                </p>
+            </div>
+        </a>
+    </div>
+<!-- footer -->
+    <div class="footer">
+        <p><span class="checkAll"></span>全选</p>
+        <div class="allGoods_num_box">结算（<span class="allGoods_num">0</span>）</div>
+        <div>合计：<div class="money_box">
+            <span class="money_num">￥<i>0.00</i></span>
+            <span>不含运费</span>
+        </div></div>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    $(".allGoods_num").html($(".checked").length);
+    disable($(".checked").length);
+    moneyAll()
+
+
+    $(".checkAll").click(function(){
+        if($(this).hasClass("checkedAll")){
+            $(this).removeClass("checkedAll");
+            $(".check").addClass("checked");
+        }else{
+            $(this).addClass("checkedAll");
+            $(".check").removeClass("checked");
+        }
+        $(".allGoods_num").html($(".checked").length);
+        disable($(".checked").length);
+        
+         moneyAll()
+    })
+
+
+    $(".check").click(function(){
+        if($(this).hasClass("checked")){
+            $(this).removeClass("checked");
+        }else{
+            $(this).addClass("checked");
+        }
+        let num=0;
+        for(let i=0;i<$(".check").length;i++){
+            if($($(".check")[i]).hasClass("checked")==false){
+                num++;
+            }
+        }
+        if(num>0){
+            $(".checkAll").addClass("checkedAll");
+        }else{
+            $(".checkAll").removeClass("checkedAll");
+        }
+        
+        $(".allGoods_num").html($(".checked").length);
+        disable($(".checked").length);
+        
+        moneyAll()
+    })
+    function disable(num){
+        if(num==0){
+            $(".allGoods_num_box").css({"background-color":"#b4b4b4"})
+        }else{
+            $(".allGoods_num_box").css({"background-color":"#cf3131"})
+        }
+    }
+    function moneyAll(){
+        let good_priceArr=[];
+        for(let i=0;i<$(".check").length;i++){
+            if($($(".check")[i]).hasClass("checked")){
+                good_priceArr.push(i);
+            }
+        }
+        let numAll=0;
+        for(let i=0;i<good_priceArr.length;i++){
+            let index=good_priceArr[i]
+            numAll+=parseFloat($($(".good_price_")[index]).html());
+        }
+        $($(".money_num").children("i")).html(numAll.toFixed(2));
+    }
+    $(".btn_list").toggle(
+        function(){
+            $(".btn_box").show();
+        },
+        function(){
+            $(".btn_box").hide();
+        }    
+    )
+})
+</script>

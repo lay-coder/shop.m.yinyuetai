@@ -1,0 +1,122 @@
+body {
+  background-color: #ffffff; }
+
+/*head*/
+.sousuo_box {
+  height: .45rem;
+  line-height: .45rem; }
+  .sousuo_box a {
+    float: left;
+    width: .4rem;
+    height: .45rem; }
+  .sousuo_box .back_btn {
+    display: inline-block;
+    width: .08rem;
+    height: .12rem;
+    background-image: url(../img/icon_2.png);
+    background-size: .16rem .535rem;
+    margin-left: .15rem;
+    margin-top: .18rem; }
+  .sousuo_box .search_btn {
+    display: inline-block;
+    margin-left: .06rem;
+    width: .4rem;
+    height: .45rem;
+    color: #4c4d53; }
+  .sousuo_box input {
+    width: 2.8rem;
+    height: .3rem;
+    margin: .08rem 0 .06rem;
+    border-radius: .18rem;
+    background-color: #f0f1f5;
+    border: none;
+    outline: none;
+    text-indent: .1rem; }
+
+/*nav*/
+.nav {
+  display: block;
+  height: .35rem;
+  text-align: center;
+  line-height: .35rem;
+  font-size: .13rem;
+  border-bottom: .01rem dashed #ced0dd; }
+  .nav a {
+    color: #4c4d53; }
+  .nav span {
+    display: inline-block;
+    width: .06rem;
+    height: .07rem;
+    margin-left: .04rem;
+    background-image: url(../img/icon_2.png);
+    background-size: .16rem .535rem;
+    background-position: -.725rem 0; }
+
+/*content*/
+.hotSearch {
+  overflow: hidden;
+  padding: .13rem .15rem 0; }
+  .hotSearch p {
+    height: .27rem;
+    line-height: .27rem;
+    color: #ff4683; }
+  .hotSearch .hotSearch_box a {
+    float: left;
+    height: .38rem;
+    line-height: .38rem;
+    color: #000000;
+    padding: 0 .14rem;
+    border: .01rem solid #000000;
+    border-radius: .2rem;
+    margin: 0 .05rem .1rem; }
+
+.historySearch p {
+  margin: .17rem .15rem .06rem;
+  height: .27rem;
+  line-height: .27rem;
+  color: #ff4683; }
+
+.historySearch .his_box {
+  height: .35rem;
+  line-height: .35rem;
+  margin: 0 .3rem .16rem;
+  border-bottom: .01rem dashed #f4f4f8; }
+  .historySearch .his_box .search_logo {
+    float: left;
+    width: .1rem;
+    height: .1rem;
+    margin-top: .12rem;
+    margin-right: .14rem;
+    background-image: url(../img/icon_2.png);
+    background-size: .16rem .535rem;
+    background-position: 0 -.13rem; }
+  .historySearch .his_box .his_del {
+    float: right;
+    width: .15rem;
+    height: .16rem;
+    background-image: url(../img/icon_many.png);
+    background-size: .165rem 1.355rem;
+    margin-top: .09rem;
+    margin-right: .01rem; }
+
+.clearHis_btn {
+  width: 1.34rem;
+  height: .3rem;
+  margin: 0 auto;
+  padding: 0 .17rem;
+  border: .02rem solid #ced0dd;
+  border-radius: .2rem; }
+  .clearHis_btn p {
+    width: .96rem;
+    height: .3rem;
+    font-size: .13rem;
+    line-height: .3rem;
+    color: #ced0dd; }
+    .clearHis_btn p span {
+      float: left;
+      width: .12rem;
+      height: .14rem;
+      margin-top: .08rem;
+      margin-right: .04rem;
+      background-image: url(../img/del.png);
+      background-size: .12rem .14rem; }

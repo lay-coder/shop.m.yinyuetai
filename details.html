@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<link rel="stylesheet" type="text/css" href="css/details.css"/>
+<title>商品详情</title>
+</head>
+<body>
+<!-- head -->
+    <div class="head">
+        <span class="back_btn"></span>
+        <span class="btn_list">...</span>
+        <span class="share_btn"><i></i></span>
+        <div class="btn_box">
+            <a href="index.html">主页</a>
+            <a href="assort.html">分类</a>
+            <a href="find.html">发现</a>
+            <a href="my.html">我的</a>
+            <span></span>
+        </div>
+    </div>  
+<!-- banner -->
+    <div class="swiper-container banner_0">
+        <div class="swiper-wrapper banner_1">
+            <div class="swiper-slide banner_2">
+                <a href="#" target="_blank">
+                    <img src="img/-M-bcdf91920171aeb3fb958d322420c08d_418x418.jpg"/>
+                </a>
+            </div>
+            <div class="swiper-slide banner_2">
+                <a href="#" target="_blank">
+                    <img src="img/-M-bc4cce0620f70873eb81cf9becd602dd_418x418.jpg"/>
+                </a>
+            </div>
+            <div class="swiper-slide banner_2">
+                <a href="#" target="_blank">
+                    <img src="img/-M-08b6d11062ac414faaa4f06eb8df6936_418x418.jpg"/>
+                </a>
+            </div>
+            <div class="swiper-slide banner_2">
+                <a href="#" target="_blank">
+                    <img src="img/-M-1791fb537e774eb7020577baa3adddb2_418x418.jpg"/>
+                </a>
+            </div>
+        </div>
+        <div class="swiper-pagination banner_3"></div>
+    </div>
+    <p class="line"></p>
+<!-- content -->
+    <div class="content">
+        <div class="content_1">
+            <p class="good_name">【全款预定】最敢女中音 潘辰《真实面》预购赠送签名照(共50张)[Y04]</p>
+            <p class="good_price">￥99</p>
+        </div>
+        <div class="content_2">
+            <div></div>
+        </div>
+        <a class="content_3">
+            <span class="hanteo_bg"></span>
+            <span class="hanteo_msg">过去10分钟又有<i>0</i>张专辑计入hanteo榜</span>
+            <span class="hanteo_jian"></span>
+        </a>
+        <div class="content_4">
+            <div class="content_4_1">
+                <div class="content_4_1_div">
+                    <span class="content_4_1_span span_click">商品详情</span>
+                </div>
+                <span class="vertical_line"></span>
+                <div class="content_4_1_div">
+                    <span class="content_4_1_span">问答</span>
+                </div>
+            </div>
+            <div class="content_4_2" style="background:skyblue;height: 12rem;">
+
+            </div>
+            <div class="content_4_2" style="background:orangered;height: 12rem;display: none;">
+
+            </div>
+        </div>    
+    </div>
+<!-- footer -->
+    <div class="footer">
+        <a href="goodsCart.html" class="footer_1">
+            <p class="cart_num"><span>9</span></p>
+            <p>购物车</p>
+        </a>
+        <div class="footer_3">加入购物车</div>
+        <div class="footer_2">立即购买</div>
+    </div>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    $(".content_4_1_div").click(function(){
+        let index=$(this).index(".content_4_1_div");
+        $(".content_4_2").hide();
+        $($(".content_4_2")[index]).show();
+
+        $(".content_4_1_span").removeClass("span_click");
+        $($(".content_4_1_span")[index]).addClass("span_click");
+    })
+
+    $(".back_btn").click(function(){
+        window.history.back();
+    })
+
+    $(".btn_list").click(
+        function(){
+            $(".btn_box").css({
+                    width: 0,
+                    height: 0,
+                    opacity: 0
+            });
+            $(".btn_box").show();
+            $(".btn_box").animate(
+                {
+                    width: '.99rem',
+                    height: '1.44rem',
+                    opacity: .9,
+                },100
+            );       
+            $(".btn_box").css({
+                overflow:"visible"
+            })
+        }
+    )
+    $("body").click(function(event){
+        if($(event.target).hasClass("btn_list")==false){
+          $(".btn_box").hide();
+        }
+    })
+})
+var swiper = new Swiper('.banner_0', {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	loop: true,
+	pagination: {
+	el: '.banner_3',
+	clickable: true,
+	},
+	speed:1000,
+	autoplay:{
+		delay:2500,
+		disableOnInteraction:false
+	}
+});
+</script>

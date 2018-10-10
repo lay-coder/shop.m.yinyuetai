@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/my.css">
+<title>我的</title>
+</head>
+<body>
+<!-- head -->
+    <div class="head">
+        <a class="back_btn"><span></span></a>
+        <span class="title">我的</span>
+        <a class="btn_list">···</a>
+        <div class="btn_box">
+            <a href="index.html">主页</a>
+            <a href="assort.html">分类</a>
+            <a href="find.html">发现</a>
+            <a href="my.html">我的</a>
+            <a href="goodsCart.html">购物车</a>
+            <span></span>
+        </div>
+    </div>
+<!-- banner -->
+    <div class="banner">
+        <div class="load_box"> <!--登录addClass("logged")-->
+            <span class="user_photo">未登录</span>
+            <a class="load_btn">登录/注册</a>
+        </div>
+    </div>
+<!-- content -->
+    <div class="content">
+        <p class="content_box">我的订单</p>
+        <div class="indent">
+            <a href="#"><span></span><span>全部订单</span></a>
+            <a href="#"><span></span><span>待付款</span></a>
+            <a href="#"><span></span><span>待发货</span></a>
+            <a href="#"><span></span><span>待收货</span></a>
+        </div>
+        <a href="#" class="content_box">地址管理<span class="jiantou"></span></a>
+        <a href="#" class="content_box">我的优惠券<span class="jiantou"></span></a>
+        <a href="#" class="content_box">意见反馈<span class="jiantou"></span></a>
+        <a href="#" class="content_box">客服QQ：<span class="qq_box">800002945 (服务号)</span></a>
+        <a href="#" class="content_box">常见问题<span class="jiantou"></span></a>
+        <a href="#" class="content_box last_box">正品保证<span class="jiantou"></span></a>
+        <div class="quit_btn">退出登录</div>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    $(".btn_list").click(
+        function(){
+            $(".btn_box").css({
+                    width: 0,
+                    height: 0,
+                    opacity: 0
+            });
+            $(".btn_box").show();
+            $(".btn_box").animate(
+                {
+                    width: '.99rem',
+                    height: '1.75rem',
+                    opacity: .9
+                },100
+            )
+            $(".btn_box").css({
+                overflow:"visible"
+            })
+    })
+    $("body").click(function(event){
+        if($(event.target).hasClass("btn_list")==false){
+          $(".btn_box").hide();
+        }
+    })
+})
+</script>

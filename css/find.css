@@ -1,0 +1,132 @@
+body {
+  background: #fff; }
+
+/*head*/
+.head {
+  height: .45rem;
+  text-align: center;
+  line-height: .46rem;
+  background-color: #4c4d53;
+  color: #ffffff;
+  position: relative; }
+  .head .back_btn {
+    float: left;
+    width: .4rem;
+    height: .45rem; }
+    .head .back_btn span {
+      display: inline-block;
+      width: .1rem;
+      height: .13rem;
+      background-image: url(../img/icon_many.png);
+      background-size: .165rem 1.355rem;
+      background-position: 0 -1.045rem; }
+  .head .title {
+    display: inline-block;
+    width: .44rem;
+    height: .45rem; }
+  .head .title_click {
+    background-color: #ff4683; }
+  .head .btn_list {
+    float: right;
+    width: .4rem;
+    height: .45rem;
+    display: block; }
+    .head .btn_list span {
+      display: inline-block;
+      width: .16rem;
+      height: .06rem;
+      margin-right: .08rem;
+      background-image: url(../img/dian.png);
+      background-size: .16rem .08rem;
+      background-position: 0 -.04rem; }
+  .head div {
+    display: none;
+    position: absolute;
+    right: .1rem;
+    top: .45rem;
+    border-radius: .05rem;
+    background-color: #4c4d53;
+    opacity: .9;
+    padding: 0  .05rem; }
+    .head div a {
+      display: block;
+      font-size: .15rem;
+      color: #fff;
+      width: .96rem;
+      height: .44rem;
+      border-bottom: .02rem solid #5c5d62;
+      box-sizing: border-box; }
+    .head div span {
+      position: absolute;
+      top: -.26rem;
+      right: .07rem;
+      display: block;
+      width: 0;
+      height: 0;
+      border: .13rem solid transparent;
+      border-bottom-color: #4c4d53;
+      opacity: .8; }
+
+/*content*/
+.content .actor_box {
+  display: none; }
+
+.content .sousuo_box {
+  height: .45rem;
+  line-height: .45rem;
+  text-align: center; }
+  .content .sousuo_box input {
+    width: 2.69rem;
+    height: .31rem;
+    margin: .08rem .08rem .06rem;
+    border-radius: .18rem;
+    background-color: #f0f1f5;
+    border: none;
+    outline: none;
+    text-indent: .1rem; }
+  .content .sousuo_box span {
+    display: inline-block;
+    width: .4rem;
+    height: .45rem;
+    vertical-align: sub; }
+
+.content .sort_box {
+  height: .36rem;
+  background-color: #f4f4f8;
+  line-height: .36rem;
+  padding: 0 .15rem; }
+  .content .sort_box span {
+    float: left;
+    width: .45rem; }
+  .content .sort_box .sort_click {
+    color: #ff4683; }
+
+.content .sort_list {
+  display: none; }
+  .content .sort_list a {
+    display: block;
+    height: 1.03rem;
+    border-bottom: .01rem dotted #d5d5d5;
+    margin: 0 .15rem; }
+    .content .sort_list a img {
+      float: left;
+      width: .81rem;
+      height: .81rem;
+      margin-top: .1rem;
+      margin-left: .3rem;
+      border-radius: 50%; }
+    .content .sort_list a p {
+      float: left;
+      margin-left: .26rem;
+      margin-top: .35rem; }
+      .content .sort_list a p span {
+        display: block;
+        color: #ced0dd; }
+      .content .sort_list a p .good_name {
+        color: #4c4d53;
+        font-size: .15rem; }
+      .content .sort_list a p .good_num {
+        font-style: normal; }
+
+.content .sort_list_show {
+  display: block; }

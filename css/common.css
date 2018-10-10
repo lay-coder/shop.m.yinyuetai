@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  /*1vw=3.75px;
+	100px/3.75px=26.67vw;*/
+  font-size: 26.67vw; }
+
+html, body {
+  height: 100%; }
+
+body {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+  font-size: .12rem;
+  background-color: #e8e9ee; }
+
+a {
+  text-decoration: none; }
+
+img {
+  display: block;
+  border: 0; }

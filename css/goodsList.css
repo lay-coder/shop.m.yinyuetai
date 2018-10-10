@@ -1,0 +1,168 @@
+body {
+  background-color: #fff; }
+
+/*head*/
+.head {
+  height: .45rem;
+  text-align: center;
+  line-height: .45rem;
+  font-size: .13rem;
+  background-color: #4c4d53;
+  color: #ffffff;
+  position: relative; }
+  .head .back_btn {
+    float: left;
+    width: .4rem;
+    height: .45rem; }
+    .head .back_btn span {
+      display: inline-block;
+      width: .1rem;
+      height: .13rem;
+      background-image: url(../img/icon_many.png);
+      background-size: .165rem 1.355rem;
+      background-position: 0 -1.045rem; }
+  .head .btn_list {
+    float: right;
+    width: .4rem;
+    height: .45rem;
+    display: block; }
+    .head .btn_list span {
+      display: inline-block;
+      width: .16rem;
+      height: .06rem;
+      background-image: url(../img/dian.png);
+      background-size: .16rem .08rem;
+      background-position-y: -.045rem;
+      margin-right: .1rem; }
+  .head div {
+    display: none;
+    position: absolute;
+    right: .1rem;
+    top: .45rem;
+    border-radius: .05rem;
+    background-color: #4c4d53;
+    opacity: .9;
+    padding: 0  .05rem; }
+    .head div a {
+      display: block;
+      font-size: .15rem;
+      color: #fff;
+      width: .96rem;
+      height: .44rem;
+      border-bottom: .02rem solid #5c5d62;
+      box-sizing: border-box; }
+    .head div span {
+      position: absolute;
+      top: -.26rem;
+      right: .07rem;
+      display: block;
+      width: 0;
+      height: 0;
+      border: .13rem solid transparent;
+      border-bottom-color: #4c4d53;
+      opacity: .8; }
+
+/*content*/
+.content {
+  padding: 0 .15rem; }
+  .content .content_1 {
+    height: .48rem;
+    line-height: .48rem; }
+    .content .content_1 .content_1_left {
+      float: left;
+      font-size: .13rem;
+      color: #9d9ea5; }
+    .content .content_1 .content_1_right {
+      float: right;
+      height: .48rem; }
+      .content .content_1 .content_1_right i {
+        display: inline-block;
+        width: .08rem;
+        height: .06rem;
+        background-image: url(../img/icon_many.png);
+        background-size: .165rem 1.355rem;
+        background-position: -.075rem -0.97rem;
+        margin-left: .04rem;
+        margin-bottom: .01rem; }
+  .content .content_2 {
+    height: 1.38rem;
+    padding-top: .08rem;
+    border-bottom: .01rem dotted #ced0dd; }
+    .content .content_2 .content_2_left {
+      float: left;
+      width: 1.18rem;
+      height: 1.17rem;
+      border-radius: .2rem; }
+    .content .content_2 .content_2_right {
+      float: right;
+      height: 1.17rem;
+      width: 2.1rem;
+      padding-top: .15rem; }
+      .content .content_2 .content_2_right .good_msg {
+        line-height: .18rem;
+        color: #5c5c5c;
+        margin-bottom: .26rem; }
+      .content .content_2 .content_2_right .price_box {
+        font-weight: bold; }
+        .content .content_2 .content_2_right .price_box .price_now {
+          font-size: .18rem;
+          color: #ff4683; }
+        .content .content_2 .content_2_right .price_box .price_old {
+          text-decoration: line-through;
+          color: #ced0dd; }
+
+/*alert_box*/
+.alert_box {
+  display: none; }
+  .alert_box .maskLayer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4); }
+  .alert_box .filtrate_box {
+    position: fixed;
+    width: 100%;
+    height: 2rem;
+    left: 0;
+    bottom: 0;
+    background-color: #ffffff; }
+    .alert_box .filtrate_box p {
+      height: .4rem;
+      line-height: .4rem;
+      color: #000000;
+      border-bottom: .01rem dotted #d5d5d5; }
+    .alert_box .filtrate_box .sort_p {
+      text-align: center; }
+      .alert_box .filtrate_box .sort_p span {
+        float: right;
+        width: .15rem;
+        height: .15rem;
+        background-image: url(../img/icon_del.png);
+        background-size: .15rem .15rem;
+        margin-top: .14rem;
+        margin-right: .21rem; }
+    .alert_box .filtrate_box .sort_type .sort_type_1, .alert_box .filtrate_box .sort_type .sort_type_2, .alert_box .filtrate_box .sort_type .sort_type_3, .alert_box .filtrate_box .sort_type .sort_type_4 {
+      float: left;
+      width: .17rem;
+      height: .15rem;
+      background-image: url(../img/icon_many.png);
+      background-size: .165rem 1.355rem;
+      background-position: 0 -.315rem;
+      margin: .12rem .12rem 0 .2rem; }
+    .alert_box .filtrate_box .sort_type .sort_type_2 {
+      background-position-y: -.47rem; }
+    .alert_box .filtrate_box .sort_type .sort_type_3 {
+      background-position-y: -.63rem; }
+    .alert_box .filtrate_box .sort_type .sort_type_4 {
+      background-position-y: -.79rem; }
+    .alert_box .filtrate_box .sort_type .sort_type_i {
+      float: right;
+      width: .16rem;
+      height: .14rem;
+      background-image: url(../img/icon_many.png);
+      background-size: .165rem 1.355rem;
+      background-position: 0 -.16rem;
+      margin-top: .13rem;
+      margin-right: .2rem; }
